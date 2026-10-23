@@ -1,0 +1,34 @@
+
+name: Chatbot CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: chatbot/package-lock.json
+
+      - name: Install dependencies
+        working-directory: chatbot
+        run: npm ci
+
+      - name: Build React application
+        working-directory: chatbot
+        run: npm run build
