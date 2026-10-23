@@ -1,0 +1,29 @@
+{
+  "conversations": [
+    {
+      "id": 1,
+      "user": "Hello",
+      "bot": "Hi! How can I help you?"
+    },
+    {
+      "id": 2,
+      "user": "How are you?",
+      "bot": "I'm doing great, thanks for asking! How are you?"
+    },
+    {
+      "id": 3,
+      "user": "How is everything going?",
+      "bot": "Everything is going well! How about you?"
+    },
+    {
+      "id": 4,
+      "user": "Good morning",
+      "bot": "Good morning! I hope you have a wonderful day."
+    },
+    {
+      "id": 5,
+      "user": "What are you doing?",
+      "bot": "I'm here chatting with you and ready to help!"
+    }
+  ]
+}
